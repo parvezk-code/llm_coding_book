@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from io import BytesIO
+from io import  BytesIO
 from dataclasses import dataclass
 from pathlib import Path
 from typing import List, TypeAlias, TypedDict, Union
