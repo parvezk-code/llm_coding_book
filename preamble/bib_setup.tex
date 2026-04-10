@@ -1,0 +1,15 @@
+% --- Bibliography setup ---
+% \usepackage[backend=biber,style=apa]{biblatex} % or ieee, authoryear, etc.
+
+% Define paths for the bibliography files
+\providecommand{\bibfileone}{\subfix{bib/references.bib}}
+\providecommand{\bibfiletwo}{\subfix{bib/domain.bib}}
+
+% Define a single macro to add all bibliography files
+\newcommand{\addallbibs}{
+  \addbibresource{\bibfileone}
+  \addbibresource{\bibfiletwo}
+}
+
+% Add all bibliography files in one go
+\addallbibs

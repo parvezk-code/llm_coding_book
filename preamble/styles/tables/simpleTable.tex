@@ -1,0 +1,14 @@
+% Custom reusable table environment
+
+\NewDocumentEnvironment{simpleTable}{m} % #1 = caption
+{%
+  \begingroup                         % <--- start local scope
+  \begin{table}[!h]
+    \centering
+    \setlength{\tabcolsep}{10pt}
+    \renewcommand{\arraystretch}{1.4}
+}{%
+    \caption{#1}
+  \end{table}
+  \endgroup                           % <--- end local scope (cleans variables)
+}

@@ -1,0 +1,15 @@
+% usepackage : enumitem
+\noindent Custom-labeled enumerate/ref. See \ref{itm:q2}, and \ref{itm:q3} [uses ref= to mirror labels].
+\par
+\begin{enumerate}[label=Q\arabic*.,ref=Q\arabic*]
+  \item\label{itm:q1} What is your name?
+  \item\label{itm:q2} What is your quest?
+  \item\label{itm:q3} What is your favorite color?
+\end{enumerate}
+
+
+\noindent In-paragraph list (manual punctuation), useful for compact text:
+\par
+\begin{enumerate}[label=(\alph*),nosep]
+  \item apples, \item bananas, \item cherries, \item dates.
+\end{enumerate}

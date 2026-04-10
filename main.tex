@@ -1,0 +1,32 @@
+% \documentclass[12pt,a4paper]{book}
+% \documentclass[oneside,openany]{book}
+
+% following avoids blank page when new chaper starts with odd no
+\documentclass[12pt,a4paper,openany]{book}
+
+
+\input{preamble/main_preamble.tex}
+
+\begin{document}
+
+% Front Matter (unnumbered pages)
+\frontmatter
+
+\title{The LLM Help Book}
+\author{New User}
+\maketitle
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+% If the document class is report, remove \mainmatter
+\mainmatter
+\subfile{chapters/chap001-Ideas/intro}
+\clearpage
+
+% If the document class is report, remove \backmatter
+\backmatter
+\printbibliography
+
+\end{document}

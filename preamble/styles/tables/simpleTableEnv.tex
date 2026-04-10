@@ -1,0 +1,15 @@
+% Custom reusable table environment
+
+\NewDocumentEnvironment{simpleTableEnv}{m}
+{
+    \begingroup
+    \setlength{\tabcolsep}{10pt}
+    \begin{center}
+    \renewcommand{\arraystretch}{1.4}
+}{
+    \begin{table}[!h]
+        \caption{#1}
+    \end{table}
+    \end{center}
+    \endgroup
+}

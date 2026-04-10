@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "LaTeX Build",
+        "type": "shell",
+        "command": "bash",
+        "args": [
+          "-c",
+          "latexmk -C -outdir=${workspaceFolder}/zz_pdf && latexmk -pdf -interaction=nonstopmode -outdir=${workspaceFolder}/zz_pdf ${fileBasename} && latexmk -c -outdir=${workspaceFolder}/zz_pdf && rm -f ${workspaceFolder}/zz_pdf/*.bbl "
+        ],
+        "options": {
+          "cwd": "${fileDirname}"
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "clear": true
+        },
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "LaTeX Clean",
+        "type": "shell",
+        "command": "bash",
+        "args": [
+          "-c",
+          "latexmk -C -outdir=${workspaceFolder}/zz_pdf && rm -f ${workspaceFolder}/zz_pdf/*.bbl"
+        ],
+        "options": {
+          "cwd": "${fileDirname}"
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated",
+          "clear": true
+        }
+      }
+    ]
+  }
+  

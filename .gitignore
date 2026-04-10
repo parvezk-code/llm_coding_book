@@ -1,2 +1,22 @@
-__pycache__/
-*.py[cod]
+# Ignore
+
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.toc
+*.pdf
+*temp_delete*
+
+chapters/chap01-introduction/intro.synctex.gz
+
+# Allow
+# !static/css/bootstrap-styled.css
+!subjects/CSO/topics/*.pdf
