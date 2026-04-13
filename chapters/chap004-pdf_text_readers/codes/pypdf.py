@@ -14,5 +14,4 @@ def extract_text_pypdf(file_path: str) -> str:
 
     return "\n".join(text)
 
-
 # text = extract_text_pypdf("sample.pdf")

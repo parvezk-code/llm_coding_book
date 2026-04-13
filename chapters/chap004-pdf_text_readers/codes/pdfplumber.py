@@ -1,4 +1,3 @@
-
 # pip install pdfplumber
 
 import pdfplumber
@@ -13,6 +12,5 @@ def extract_text_pdfplumber(file_path: str) -> str:
                 text.append(page_text)
 
     return "\n".join(text)
-
 
 # text = extract_text_pdfplumber("sample.pdf")

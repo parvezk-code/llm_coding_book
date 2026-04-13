@@ -1,4 +1,3 @@
-
 # pip install pymupdf
 
 import fitz
@@ -15,6 +14,4 @@ def extract_text_pymupdf(file_path: str) -> str:
     doc.close()
     return "\n".join(text)
 
-
 # text = extract_text_pymupdf("sample.pdf")
-

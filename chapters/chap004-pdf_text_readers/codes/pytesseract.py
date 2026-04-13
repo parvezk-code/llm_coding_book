@@ -1,5 +1,3 @@
-
-
 # pip install pytesseract pdf2image\
 # sudo apt install tesseract-ocr poppler-utils
 
@@ -16,6 +14,5 @@ def extract_text_ocr(file_path: str) -> str:
             text.append(page_text)
 
     return "\n".join(text)
-
 
 # text = extract_text_ocr("scanned.pdf")

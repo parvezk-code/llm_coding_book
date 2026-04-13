@@ -1,34 +1,17 @@
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
 \begin{tikzpicture}[node distance=1.5cm, scale=0.95, transform shape, framed, background rectangle/.style={draw=black, thick}]
     \node[rectangle_a_blue_a] at (0,0) (A) {User Input};
     % \coordinate (x) at ([yshift=-1cm]n3.south);
     % \coordinate (y) at (start |- x);
     \node[rec_b_pink_a, right= 2cm of A] (B) {OCI};
     \node[rec_b_pink_a, right= 2cm of B] (C) {Template 1};
-    % \node[rec_b_pink_a, below= 1cm of C, xshift=-2cm] (D) {Template 2};
     \node[circle,draw,minimum size=0.5cm,right= 3cm of C] (F) {LLM};
     \node[rectangle_a_blue_a,right= 1cm of F] (G) {Response};
     
     \draw[arrow] (A) -- node[anchor=south] {PDF} (B);
-    % \draw[->] (A.south) |- node[pos=0.75, above] {Questions} (D.west);
     \draw[arrow] (B) -- node[anchor=south] {text} (C);
     \draw[arrow] (C) -- node[anchor=south] {Sys Prompt} (F);
-    % \draw[->] (D.east) -| node[pos=0.25, above] {Usr Prompt} (F.south);
-    % \draw[->] (A.south) |- ($(A.south) + (0,-1)$) -| (F.south);
     \draw[->] (A.south) |- ($(A.south) + (0,-1)$) -- node[midway, above] {User Prompt} ($(F.south) + (0,-1)$) -| (F.south);
-
-
-
     \draw[arrow] (F) -- (G);
-    
-    
-
-    % \draw[arrow] (B) -- (9,1) -- (9,0) -- (D);
-    % \draw[-] (C) -- (9,-1) -- (9,0);
 \end{tikzpicture}
