@@ -1,0 +1,14 @@
+{
+  "questions": [
+    {
+      "question_id": "Q1",
+      "question_text": "",
+      "desired_answer": "",
+      "max_marks": 10,
+      "rubric": [ 
+        { "criterion_name": "", "description": "", "marks": 4 },
+        { "criterion_name": "", "description": "", "marks": 4 },
+        { "criterion_name": "", "description": "", "marks": 4 }
+      ]
+    }
+]}

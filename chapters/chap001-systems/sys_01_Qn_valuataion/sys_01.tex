@@ -1,0 +1,24 @@
+\documentclass[../../../main.tex]{subfiles}
+\begin{document}
+
+
+% \input{\subfix{images/Embedding_Models.tex}}
+% \input{\subfix{tables/context_window.tex}}
+
+\chapter{Question Valuation using rubrics} 
+
+    \lstinputlisting[
+        language=json,
+        linerange={1-14}
+    ]{\subfix{config_files/input_01_questions.json}}
+
+    \lstinputlisting[
+        language=json,
+        linerange={1-10}
+    ]{\subfix{config_files/input_02_student_response.json}}
+	
+	\input{\subfix{sec_01.tex}}
+
+    \input{\subfix{tab_02.tex}}
+
+\end{document}
