@@ -1,0 +1,64 @@
+\begin{simpleCenteringTempChapterTable}{Table with environment}
+	\def\cellLayer{Tools}
+	\def\cellPy{Input}
+	\def\cellJs{Output}
+	
+	\def\cellTwoA{\makecell[l]{Validator \\ Program }}
+	\def\cellTwoB{\makecell[l]{Questions rubrics JSON \\ Student submission JSON }}
+	\def\cellTwoC{\makecell[l]{Validation report : success or failure, validation errors }}
+	
+	\def\cellThreeA{\makecell[l]{Persistence \\ Program }}
+	\def\cellThreeB{\makecell[l]{Questions rubrics JSON \\ Student submission JSON }}
+	\def\cellThreeC{Database records saved in DB}
+	
+	\def\cellRubricA{\makecell[l]{Question and \\ rubric storage }}
+	\def\cellRubricB{PostgreSQL (JSON‑field rubrics)}
+	\def\cellRubricC{\makecell[l]{Same; stored server‑side, \\  exposed via API }}
+	
+	\def\cellLlmA{LLM grader API}
+	\def\cellLlmB{\makecell[l]{OpenAI (Structured Outputs) \\ Anthropic }}
+	\def\cellLlmC{\makecell[l]{OpenAI SDK, Anthropic SDK, \\  Vercel AI SDK }}
+	
+	\def\cellStructA{\makecell[l]{Structured grading \\ format }}
+	\def\cellStructB{\makecell[l]{OpenAI Structured Outputs/ \\ Pydantic models }}
+	\def\cellStructC{\makecell[l]{OpenAI Structured Outputs \\  in JSON schema }}
+	
+	\def\cellTestA{\makecell[l]{Prompt and \\ rubric testing }}
+	\def\cellTestB{Promptfoo}
+	\def\cellTestC{\makecell[l]{Promptfoo \\  (run from Node/Python glue) }}
+	
+	\def\cellObsA{Observability and eval}
+	\def\cellObsB{Langfuse}
+	\def\cellObsC{Langfuse}
+	
+	\def\cellMetricA{\makecell[l]{Scoring analysis/ \\  metrics }}
+	\def\cellMetricB{Ragas, pandas}
+	\def\cellMetricC{\makecell[l]{Ragas (via backend) \\  custom analytics }}
+	 
+	\def\cellDashboardA{\makecell[l]{Human review/ \\  dashboard }}
+	\def\cellDashboardB{FastAPI + Streamlit / Flask}
+	\def\cellDashboardC{\makecell[l]{Next.js admin UI with \\  React/TanStack Table }}
+	
+	\def\cellUploadA{Client upload}
+	\def\cellUploadB{Python backend handles files}
+	\def\cellUploadC{\makecell[l]{React form + fetch/ \\  FormData to backend }}
+	
+	\def\cellSharedA{Shared / cloud services}
+	\def\cellSharedB{\makecell[l]{OpenAI, Anthropic, Promptfoo, \\ Langfuse, Ragas }}
+	\def\cellSharedC{\makecell[l]{Same; consumed via HTTP/SDKs \\  from either language }}
+
+	\begin{tabular}{|l|l|l|} \hline
+		\cellLayer 		& \cellPy 			& \cellJs 			\\ \hline
+		\cellTwoA 		& \cellTwoB 		& \cellTwoC 		\\ \hline
+		\cellThreeA 	& \cellThreeB 		& \cellThreeC 		\\ \hline
+		% \cellRubricA 	& \cellRubricB 		& \cellRubricC 		\\ \hline
+		% \cellLlmA 		& \cellLlmB 		& \cellLlmC 		\\ \hline
+		% \cellStructA 	& \cellStructB 		& \cellStructC 		\\ \hline
+		% \cellTestA 		& \cellTestB 		& \cellTestC 		\\ \hline
+		% \cellObsA 		& \cellObsB 		& \cellObsC 		\\ \hline
+		% \cellMetricA 	& \cellMetricB 		& \cellMetricC 		\\ \hline
+		% \cellDashboardA & \cellDashboardB 	& \cellDashboardC 	\\ \hline
+		% \cellUploadA 	& \cellUploadB 		& \cellUploadC 		\\ \hline
+		% \cellSharedA 	& \cellSharedB 		& \cellSharedC 		\\ \hline
+	\end{tabular}
+\end{simpleCenteringTempChapterTable}

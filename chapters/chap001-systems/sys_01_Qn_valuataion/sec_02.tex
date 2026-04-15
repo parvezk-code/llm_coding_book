@@ -1,0 +1,15 @@
+\section{Question Valuation}
+
+    \begin{enumerate}
+        \item PostgreSQL \\  Store questions, model answers, rubrics, student submissions, scores, and audit logs in a relational DB.
+        \item OpenAI (with Structured Outputs) \\ Evaluate each answer against the rubric and return structured JSON per criterion (score, justification, evidence span).
+        \item Claude  \\ Act as a second‑opinion grader or judge model for high‑stakes or borderline cases.
+        \item Grading rubric engine  \\ Custom JSON/YAML stored in DB. Hold question‑specific rubrics; the app reads these and injects them into LLM prompts as clear scoring criteria.
+        \item Evaluation logic \\ Application code (Python/JS). Compute final marks from per‑criterion scores, enforce caps, apply penalties, and flag borderline answers.
+        \item Prompt testing(Promptfoo) \\ Load grading rubrics and answer pairs, systematically test grading prompts, and compare rubric‑based scores across LLM versions.
+        \item Observability \\ Log prompts, rubrics, scores, and reasoning; track LLM‑as‑a‑judge metrics and flag unreliable or inconsistent grading.
+        \item Quality benchmarking \\ Ragas or custom benchmark set. Run offline experiments to compare grading behavior, rubric design, and LLM versions on labeled teacher‑scored answers.
+        \item Human review UI \\ Let teachers review auto‑graded answers, override scores, add notes, and calibrate the system against human markers.
+        \item Student result UI \\ Show students their scores, rubric‑based feedback, and quoted evidence from their answers.
+        \item Evaluation method \\ LLM‑as‑a‑judge pattern. Use LLMs to score answers per rubric criterion, then combine numeric scores externally and log decision trails.
+    \end{enumerate}
