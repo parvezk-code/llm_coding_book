@@ -23,14 +23,14 @@
     \lstinputlisting[
         language=json,
         linerange={1-38}
-    ]{\subfix{config_files/system_prompt.json}}
+    ]{\subfix{config_files/system_prompt.txt}}
 
     \clearpage	
     \section{User Prompt}
     \lstinputlisting[
         language=json,
         linerange={1-26}
-    ]{\subfix{config_files/user_prompt.json}}
+    ]{\subfix{config_files/user_prompt.txt}}
 
     
 	
@@ -59,5 +59,7 @@
         \item Currently Each criterion is independent. LLM may double reward same content. Avoid double counting the same evidence.
         \item Missing Partial Credit Logic Standardization. Add scoring guidelines: completely missing(0), partially correct(1), mostly correct(2), fully correct(3)
         \item No Rubric Normalization Layer. 
-        \item Biggest Issue: Single-Pass Grading per Criterion. Instead of 1 call per criterion do 3–5 calls per criterion. LLM outputs vary and Reduces randomness 
-    \end{document}
+        \item Biggest Issue: Single-Pass Grading per Criterion. Instead of 1 call per criterion do 3-5 calls per criterion. LLM outputs vary and Reduces randomness 
+    \end{enumerate}
+
+\end{document}
